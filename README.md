@@ -58,6 +58,9 @@ Clamd responding: true
 
 curl -F "name=blabla" -F "file=@./eicar.txt" localhost:8080/scan
 Everything ok : false
+
+curl -F "name=blabla" -F "file=@./eicar.txt" localhost:8080/scan-details
+Everything ok : stream: Eicar-Test-Signature FOUND
 ```
 
 EICAR is a test file which is recognized as a virus by scanners even though it's not really a virus. Read more [EICAR information here](http://www.eicar.org/86-0-Intended-use.html).

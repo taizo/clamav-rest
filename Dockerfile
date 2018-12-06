@@ -19,4 +19,3 @@ EXPOSE 8080
 
 ADD bootstrap.sh /
 ENTRYPOINT ["/bootstrap.sh"]
-
